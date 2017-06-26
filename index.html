@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let's Draw!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Tangerine|Rock+Salt" rel="stylesheet">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+  <header class="card">
+      Illustrate
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button class="accordion navcard">Size</button>
+        <div class="panelcard">
+          <div id="rad">
+            Size:<span id="radval">1</span><br><br>
+            <div id="slider"></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <button class="accordion navcard">Colors</button>
+        <div class="panelcard">
+
+          <div id="red"></div>
+          <div id="green"></div>
+          <div id="blue"></div>
+          <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+        </div>
+      </li>
+      <li> 
+        <button class="accordion navcard">Save</button>
+        <div class="panelcard"><div id="save">To save the drawing click on <a id="download">Download</a></div></div>
+      </li>
+      
+    </ul>
+    <div class="handle">Menu</div>
+  </nav>
+  <section>
+    <div id="canvasbox" class="card">
+      <canvas id="canvas"></canvas>
+    </div>
+  </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
